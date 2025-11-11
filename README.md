@@ -4,9 +4,29 @@ A comprehensive platform designed to empower Indian students by simplifying acad
 
 ---
 
-## **Features**
+## Table of Contents
 
-### **Core Capabilities**
+1. [Features](#features)
+   - [Core Capabilities](#core-capabilities)
+   - [Exam Preparation](#exam-preparation)
+   - [Scholarships](#scholarships)
+   - [Admin Dashboard](#admin-dashboard)
+2. [Tech Stack](#tech-stack)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [API Endpoints](#api-endpoints)
+7. [Troubleshooting](#troubleshooting)
+8. [Contributing](#contributing)
+9. [Support](#support)
+10. [Future Roadmap](#future-roadmap)
+11. [Acknowledgments](#acknowledgments)
+
+---
+
+## Features
+
+### Core Capabilities
 
 - **Document Upload & OCR** - Upload PDFs, images, and documents for automatic text extraction  
 - **AI-Powered Simplification** - Convert complex academic documents into clear, conversational explanations  
@@ -16,7 +36,7 @@ A comprehensive platform designed to empower Indian students by simplifying acad
 
 ---
 
-### **Exam Preparation**
+### Exam Preparation
 
 - Guided pathways for JEE Mains, NEET, UPSC, and GATE  
 - Detailed preparation guidelines with resources  
@@ -25,7 +45,7 @@ A comprehensive platform designed to empower Indian students by simplifying acad
 
 ---
 
-### **Scholarships**
+### Scholarships
 
 - Automatic fetching from trusted government sources (National Scholarships Portal, Ministry of Education, etc.)  
 - Real-time scholarship information with eligibility criteria  
@@ -34,7 +54,7 @@ A comprehensive platform designed to empower Indian students by simplifying acad
 
 ---
 
-### **Admin Dashboard**
+### Admin Dashboard
 
 - User management and analytics  
 - Exam pathway creation and management  
@@ -43,20 +63,20 @@ A comprehensive platform designed to empower Indian students by simplifying acad
 
 ---
 
-## **Tech Stack**
+## Tech Stack
 
-| Layer        | Technologies                                                                 |
-|---------------|------------------------------------------------------------------------------|
-| **Frontend**  | Next.js 16, React 19, TypeScript, Tailwind CSS, shadcn/ui                   |
-| **Backend**   | Next.js API Routes                                                           |
-| **Database**  | MongoDB (Local or Atlas)                                                     |
-| **AI**        | Vercel AI SDK with OpenAI/Gemini models                                      |
-| **Voice**     | Web Speech API (browser native)                                              |
-| **OCR**       | Tesseract.js (client-side)                                                   |
+| Layer | Technologies |
+|-------|---------------|
+| **Frontend** | Next.js 16, React 19, TypeScript, Tailwind CSS, shadcn/ui |
+| **Backend** | Next.js API Routes |
+| **Database** | MongoDB (Local or Atlas) |
+| **AI** | Vercel AI SDK with OpenAI/Gemini models |
+| **Voice** | Web Speech API (browser native) |
+| **OCR** | Tesseract.js (client-side) |
 
 ---
 
-## **Prerequisites**
+## Prerequisites
 
 - Node.js 18+ and npm/yarn  
 - MongoDB (local or Atlas connection string)  
@@ -64,15 +84,172 @@ A comprehensive platform designed to empower Indian students by simplifying acad
 
 ---
 
-## **Installation**
+## Installation
 
-### **1. Clone and Install**
+### 1. Clone and Install
 
-```bash
+```
 # Clone the repository
 git clone https://github.com/Ravindranbit/-Educathon.git
 cd academyai
 
 # Install dependencies
 npm install
+```
+###2. Setup Local MongoDB
+Option A: Local MongoDB
+```
+# Install MongoDB Community Edition
+# macOS (Homebrew)
+brew tap mongodb/brew
+brew install mongodb-community
+
+# Start MongoDB
+brew services start mongodb-community
+
+# Verify it's running
+mongosh
+```
+Option B: MongoDB Atlas (Cloud)
+```
+Go to MongoDB Atlas
+
+Create a free account and cluster
+
+Get your connection string
+```
+###3. Environment Setup
+```
+# Create .env.local file
+cp .env.example .env.local
+Edit .env.local with your values:
+
+# For Local MongoDB
+DATABASE_URL=mongodb://localhost:27017/academyai
+
+# For MongoDB Atlas
+DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/academyai
+
+# Generate SESSION_SECRET
+openssl rand -base64 32
+
+# Add to .env.local
+SESSION_SECRET=your-generated-secret
+```
+###4. Run Development Server
+```
 npm run dev
+
+Visit http://localhost:3000
+```
+Usage
+Student Features
+
+Sign Up/Login - Create account with email and password
+
+Upload Documents - Upload academic documents for simplification
+
+View Simplified Content - Read clear explanations in your preferred language
+
+Ask Voice Questions - Use voice interface to ask questions
+
+Explore Exams - Browse JEE, NEET, UPSC, GATE with prep guides
+
+Find Scholarships - Search and apply for available scholarships
+
+Chat with AI - Get instant answers from AI assistant
+
+Admin Features
+
+Navigate to /admin with admin credentials
+
+Manage users, exams, scholarships, and content
+
+Monitor platform analytics
+
+Default Credentials (Development)
+
+Create your first admin account via signup, then contact support to upgrade to admin.
+
+#Troubleshooting
+MongoDB Connection Issues
+
+Error: "connect ECONNREFUSED"
+
+Ensure MongoDB is running: brew services list (macOS)
+
+Check DATABASE_URL format: mongodb://localhost:27017/academyai
+
+Error: "authentication failed"
+
+Verify MongoDB Atlas credentials
+
+Create a new database user if needed
+
+Ensure IP whitelist includes your address
+
+AI Chat Not Working
+
+Error: "Failed to get response from AI"
+
+Verify DATABASE_URL and SESSION_SECRET are set
+
+Check that you're authenticated (logged in)
+
+Review API response in browser console
+
+Environment Variables Not Loading
+
+Error: "Missing required environment variables"
+
+Confirm .env.local exists in project root
+
+Restart development server after changes
+
+Check for typos in variable names
+
+Contributing
+
+Contributions are welcome. Please follow these steps:
+```
+# 1. Fork the repository
+# 2. Create a feature branch
+git checkout -b feature/amazing-feature
+
+# 3. Commit changes
+git commit -m 'Add amazing feature'
+
+# 4. Push to branch
+git push origin feature/amazing-feature
+
+# 5. Open a Pull Request
+```
+For issues or questions:
+
+Open an issue on GitHub
+
+Future Roadmap
+
+Integration with national education platforms
+
+Offline functionality
+
+Mobile app (React Native)
+
+Advanced analytics dashboard
+
+Peer-to-peer study groups
+
+Video tutorials
+
+Live doubt sessions with experts
+
+Acknowledgments
+
+Ministry of Education, India
+
+National Test Abhyasa Platform
+
+Scholarship Portal India
+
+Open source community
