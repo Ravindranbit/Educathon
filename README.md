@@ -171,46 +171,43 @@ Default Credentials (Development)
 
 Create your first admin account via signup, then contact support to upgrade to admin.
 
-#Troubleshooting
-MongoDB Connection Issues
+## Troubleshooting
 
-Error: "connect ECONNREFUSED"
+### MongoDB Connection Issues
 
-Ensure MongoDB is running: brew services list (macOS)
+- **Error: "connect ECONNREFUSED"**
+  - Ensure MongoDB is running: `brew services list` (macOS)
+  - Check `DATABASE_URL` format: `mongodb://localhost:27017/academyai`
 
-Check DATABASE_URL format: mongodb://localhost:27017/academyai
+- **Error: "authentication failed"**
+  - Verify MongoDB Atlas credentials
+  - Create a new database user if needed
+  - Ensure IP whitelist includes your address
 
-Error: "authentication failed"
+---
 
-Verify MongoDB Atlas credentials
+### AI Chat Not Working
 
-Create a new database user if needed
+- **Error: "Failed to get response from AI"**
+  - Verify `DATABASE_URL` and `SESSION_SECRET` are set
+  - Check that you're authenticated (logged in)
+  - Review API response in browser console
 
-Ensure IP whitelist includes your address
+---
 
-AI Chat Not Working
+### Environment Variables Not Loading
 
-Error: "Failed to get response from AI"
+- **Error: "Missing required environment variables"**
+  - Confirm `.env.local` exists in project root
+  - Restart development server after changes
+  - Check for typos in variable names
 
-Verify DATABASE_URL and SESSION_SECRET are set
+---
 
-Check that you're authenticated (logged in)
+## Contributing
 
-Review API response in browser console
-
-Environment Variables Not Loading
-
-Error: "Missing required environment variables"
-
-Confirm .env.local exists in project root
-
-Restart development server after changes
-
-Check for typos in variable names
-
-Contributing
-
-Contributions are welcome. Please follow these steps:
+- Contributions are welcome.  
+- To contribute Please follow these steps:
 ```
 # 1. Fork the repository
 # 2. Create a feature branch
@@ -224,32 +221,3 @@ git push origin feature/amazing-feature
 
 # 5. Open a Pull Request
 ```
-For issues or questions:
-
-Open an issue on GitHub
-
-Future Roadmap
-
-Integration with national education platforms
-
-Offline functionality
-
-Mobile app (React Native)
-
-Advanced analytics dashboard
-
-Peer-to-peer study groups
-
-Video tutorials
-
-Live doubt sessions with experts
-
-Acknowledgments
-
-Ministry of Education, India
-
-National Test Abhyasa Platform
-
-Scholarship Portal India
-
-Open source community
