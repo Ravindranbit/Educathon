@@ -142,34 +142,32 @@ npm run dev
 
 Visit http://localhost:3000
 ```
-Usage
-Student Features
+## Usage
 
-Sign Up/Login - Create account with email and password
+### Student Features
 
-Upload Documents - Upload academic documents for simplification
+- **Sign Up/Login** – Create an account with email and password  
+- **Upload Documents** – Upload academic documents for simplification  
+- **View Simplified Content** – Read clear explanations in your preferred language  
+- **Ask Voice Questions** – Use voice interface to ask questions  
+- **Explore Exams** – Browse JEE, NEET, UPSC, and GATE with preparation guides  
+- **Find Scholarships** – Search and apply for available scholarships  
+- **Chat with AI** – Get instant answers from the AI assistant  
 
-View Simplified Content - Read clear explanations in your preferred language
+---
 
-Ask Voice Questions - Use voice interface to ask questions
+### Admin Features
 
-Explore Exams - Browse JEE, NEET, UPSC, GATE with prep guides
+- Navigate to `/admin` with admin credentials  
+- Manage users, exams, scholarships, and content  
+- Monitor platform analytics  
 
-Find Scholarships - Search and apply for available scholarships
+---
 
-Chat with AI - Get instant answers from AI assistant
+### Default Credentials (Development)
 
-Admin Features
-
-Navigate to /admin with admin credentials
-
-Manage users, exams, scholarships, and content
-
-Monitor platform analytics
-
-Default Credentials (Development)
-
-Create your first admin account via signup, then contact support to upgrade to admin.
+- Create your first admin account via signup  
+- Contact support to upgrade it to an admin account  
 
 ## Troubleshooting
 
