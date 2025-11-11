@@ -86,13 +86,13 @@ bash
 DATABASE_URL=mongodb://localhost:27017/academyai
 
 # For MongoDB Atlas, use:
-# DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/academyai
+DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/academyai
 
 # Generate SESSION_SECRET
 openssl rand -base64 32
 
 # Add to .env.local
-SESSION_SECRET=<your-generated-secret>
+SESSION_SECRET= your-generated-secret
 
 ### 4. Run Development Server
 bash
