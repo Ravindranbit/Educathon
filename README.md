@@ -7,7 +7,7 @@ A comprehensive platform designed to empower Indian students by simplifying acad
 ### Core Capabilities
 - **Document Upload & OCR** - Upload PDFs, images, and documents for automatic text extraction
 - **AI-Powered Simplification** - Convert complex academic documents into clear, conversational explanations
-- **11+ Indian Language Support** - Hindi, Tamil, Telugu, Bengali, Marathi, Kannada, Malayalam, Gujarati, Punjabi, Urdu, Assamese
+- **10+ Indian Language Support** - Hindi, Tamil, Telugu, Bengali, Marathi, Kannada, Malayalam, Gujarati, Punjabi, Urdu, Assamese
 - **Voice Interaction** - Web Speech API for accessibility and hands-free learning
 - **AI Chat Assistant** - Interactive chat powered by OpenAI/Gemini for personalized help
 
@@ -150,47 +150,6 @@ Create your first admin account via signup, then contact support to upgrade to a
 ### Chat
 - `POST /api/chat` - Send message to AI assistant
 
-## Deployment
-
-### Deploy to Vercel
-
-1. Push code to GitHub
-2. Go to https://vercel.com and connect your repo
-3. Add environment variables:
-   - `DATABASE_URL` - Your MongoDB connection string
-   - `SESSION_SECRET` - Generated secret key
-4. Deploy!
-bash
-npm run build
-npm start
-
-## File Structure
-
-academyai/
-├── app/
-│   ├── api/              # API routes
-│   ├── auth/             # Auth pages
-│   ├── dashboard/        # User dashboard
-│   ├── admin/            # Admin pages
-│   └── page.tsx          # Landing page
-├── components/
-│   ├── ui/               # UI components
-│   ├── chat-assistant.tsx # Chat widget
-│   ├── home-navigation.tsx
-│   └── ...
-├── hooks/
-│   ├── use-chat.ts       # Chat hook
-│   ├── use-speech-recognition.ts
-│   └── ...
-├── lib/
-│   ├── db.ts             # MongoDB connection
-│   ├── env.ts            # Environment validation
-│   ├── exam-data.ts      # Exam information
-│   ├── scholarship-data.ts
-│   └── languages.ts      # Multilingual support
-├── .env.example          # Environment template
-├── .env.local            # Local env variables
-└── README.md
 
 ## Troubleshooting
 
@@ -229,10 +188,6 @@ Contributions welcome! Please follow these steps:
 4. Push to branch: git push origin feature/amazing-feature
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see LICENSE file for details.
-
 ## Support
 
 For issues or questions:
@@ -254,4 +209,3 @@ For issues or questions:
 - National Test Abhyasa Platform
 - Scholarship Portal India
 - Open source community
-
