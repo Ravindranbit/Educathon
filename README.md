@@ -47,20 +47,17 @@ A comprehensive platform designed to empower Indian students by simplifying acad
 ## Installation
 
 ### 1. Clone and Install
-
-\`\`\`bash
+bash
 # Clone the repository
 git clone https://github.com/Ravindranbit/-Educathon.git
 cd academyai
 
 # Install dependencies
 npm install
-\`\`\`
 
 ### 2. Setup Local MongoDB
 
-**Option A: Local MongoDB**
-\`\`\`bash
+**Option A: Local MongoDB**bash
 # Install MongoDB Community Edition
 # macOS (Homebrew)
 brew tap mongodb/brew
@@ -71,7 +68,6 @@ brew services start mongodb-community
 
 # Verify it's running
 mongosh
-\`\`\`
 
 **Option B: MongoDB Atlas (Cloud)**
 1. Go to https://www.mongodb.com/cloud/atlas
@@ -79,15 +75,12 @@ mongosh
 3. Get your connection string
 
 ### 3. Environment Setup
-
-\`\`\`bash
+bash
 # Create .env.local file
 cp .env.example .env.local
-\`\`\`
 
-Edit \`.env.local\` with your values:
-
-\`\`\`bash
+Edit .env.local with your values:
+bash
 # For Local MongoDB
 DATABASE_URL=mongodb://localhost:27017/academyai
 
@@ -99,13 +92,10 @@ openssl rand -base64 32
 
 # Add to .env.local
 SESSION_SECRET=<your-generated-secret>
-\`\`\`
 
 ### 4. Run Development Server
-
-\`\`\`bash
+bash
 npm run dev
-\`\`\`
 
 Visit http://localhost:3000
 
@@ -169,15 +159,12 @@ Create your first admin account via signup, then contact support to upgrade to a
    - `DATABASE_URL` - Your MongoDB connection string
    - `SESSION_SECRET` - Generated secret key
 4. Deploy!
-
-\`\`\`bash
+bash
 npm run build
 npm start
-\`\`\`
 
 ## File Structure
 
-\`\`\`
 academyai/
 ├── app/
 │   ├── api/              # API routes
@@ -203,15 +190,14 @@ academyai/
 ├── .env.example          # Environment template
 ├── .env.local            # Local env variables
 └── README.md
-\`\`\`
 
 ## Troubleshooting
 
 ### MongoDB Connection Issues
 
 **Error: "connect ECONNREFUSED"**
-- Ensure MongoDB is running: \`brew services list\` (macOS)
-- Check DATABASE_URL format: \`mongodb://localhost:27017/academyai\`
+- Ensure MongoDB is running: brew services list (macOS)
+- Check DATABASE_URL format: mongodb://localhost:27017/academyai
 
 **Error: "authentication failed"**
 - Verify MongoDB Atlas credentials
@@ -228,7 +214,7 @@ academyai/
 ### Environment Variables Not Loading
 
 **Error: "Missing required environment variables"**
-- Confirm \`.env.local\` exists in project root
+- Confirm .env.local exists in project root
 - Restart development server after changes
 - Check for typos in variable names
 
@@ -237,9 +223,9 @@ academyai/
 Contributions welcome! Please follow these steps:
 
 1. Fork the repository
-2. Create a feature branch: \`git checkout -b feature/amazing-feature\`
-3. Commit changes: \`git commit -m 'Add amazing feature'\`
-4. Push to branch: \`git push origin feature/amazing-feature\`
+2. Create a feature branch: git checkout -b feature/amazing-feature
+3. Commit changes: git commit -m 'Add amazing feature'
+4. Push to branch: git push origin feature/amazing-feature
 5. Open a Pull Request
 
 ## License
@@ -250,7 +236,6 @@ This project is licensed under the MIT License - see LICENSE file for details.
 
 For issues or questions:
 - Open an issue on GitHub
-- Contact: support@academyai.example
 
 ## Future Roadmap
 
