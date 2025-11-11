@@ -4,26 +4,6 @@ A comprehensive platform designed to empower Indian students by simplifying acad
 
 ---
 
-## Table of Contents
-
-1. [Features](#features)
-   - [Core Capabilities](#core-capabilities)
-   - [Exam Preparation](#exam-preparation)
-   - [Scholarships](#scholarships)
-   - [Admin Dashboard](#admin-dashboard)
-2. [Tech Stack](#tech-stack)
-3. [Prerequisites](#prerequisites)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [API Endpoints](#api-endpoints)
-7. [Troubleshooting](#troubleshooting)
-8. [Contributing](#contributing)
-9. [Support](#support)
-10. [Future Roadmap](#future-roadmap)
-11. [Acknowledgments](#acknowledgments)
-
----
-
 ## Features
 
 ### Core Capabilities
