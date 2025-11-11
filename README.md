@@ -114,7 +114,7 @@ DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/academyai
 openssl rand -base64 32
 
 # Add to .env.local
-SESSION_SECRET=your-generated-secret
+SESSION_SECRET= <your-generated-secret>
 ```
 ###4. Run Development Server
 ```
