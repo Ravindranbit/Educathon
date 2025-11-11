@@ -46,16 +46,12 @@ A comprehensive platform designed to empower Indian students by simplifying acad
 
 ## Installation
 
-### 1. Clone and Install
-
-\`\`\`bash
-# Clone the repository
+### Clone the repository
 git clone https://github.com/Ravindranbit/-Educathon.git
 cd academyai
 
 # Install dependencies
 npm install
-\`\`\`
 
 ### 2. Setup Local MongoDB
 
